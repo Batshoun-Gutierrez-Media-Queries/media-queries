@@ -13,8 +13,8 @@ body {
 
     body {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     a:hover {
@@ -38,6 +38,7 @@ body {
     h1 {
         font-size: 4em;
         text-align: center;
+        margin: 0 auto;
     }
 
     nav {
@@ -105,3 +106,95 @@ body {
     }
 
 }
+
+
+@media screen and (min-width: 992px){
+    *{
+        box-sizing: border-box;
+    }
+    /*body{*/
+    /*    display: flex;*/
+    /*    flex-wrap: wrap;*/
+    /*    justify-content: space-between;*/
+    /*}*/
+
+    nav{
+        display: flex;
+        justify-content:flex-end;
+        padding: 2em;
+        width: 100%;
+    }
+
+    .alert-info{
+        display: none;
+    }
+
+    h1{
+        /*flex-basis: 350px;*/
+        /*justify-content: center;*/
+        /*padding: 1em;*/
+        /*font-size: 2em;*/
+        display:flex;
+        align-self: flex-start;
+        position: absolute;
+        top: 40px;
+        margin-left: 1em;
+
+
+    }
+
+    .nav-links{
+        list-style: none;
+        margin:auto 10px;
+        display: flex;
+        flex-basis: 350px;
+        justify-content: flex-end;
+    }
+    .nav-links>li{
+        margin: 5px;
+        font-size: 1.5em;
+        background-color: white;
+        border:none;
+    }
+    .header-img{
+
+        display: inline-flex;
+
+        align-self: center;
+        width: 95%;
+        padding-top: 2em;
+        margin: 0 auto;
+
+    }
+
+section{
+    text-align: left;
+}
+    .main{
+        width: 60%;
+        font-size: 1.5em;
+        padding: 1em;
+        float: left;
+
+
+    }
+    .sub-section{
+
+        width: 40%;
+        font-size: 1.5em;
+        padding: 1em;
+        float: left;
+        margin: 0;
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1em auto;
+        padding-top: 10em;
+
+    }
+
+   }
